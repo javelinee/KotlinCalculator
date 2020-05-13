@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnMin"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/btnMul"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecond" />
+
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="Input first number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Input second number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumber" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:text="+"
+        app:layout_constraintEnd_toStartOf="@+id/btnMin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecond" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="x"
+        app:layout_constraintEnd_toStartOf="@+id/btnDiv"
+        app:layout_constraintStart_toEndOf="@+id/btnMin"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumber" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMul"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumber" />
+
+    <TextView
+        android:id="@+id/tvFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="First Number"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/firstNumber"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Second Number"
+        android:textColor="#000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/secondNumber"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirst" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="64dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="44dp"
+        android:text="Result"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toEndOf="@+id/tvResult"
+        app:layout_constraintTop_toBottomOf="@+id/btnMul" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
